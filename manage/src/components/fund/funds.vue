@@ -10,6 +10,7 @@
             <!-- 搜索区域 -->
             <el-row>
                 <el-col :span="6">
+                    <a href="http://localhost:8080/fund/download">导出数据</a>
                     <el-input placeholder="请输入内容" v-model="searchTxt" class="input-with-select" clearable @clear="cancelSearch">
                         <el-button slot="append" icon="el-icon-search" @click="searchList"></el-button>
                     </el-input>

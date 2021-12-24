@@ -19,8 +19,9 @@ import 'quill/dist/quill.bubble.css'
 Vue.use(VueQuillEditor);
 Vue.component('tree', tree)
 //基础地址
-// axios.defaults.baseURL = 'http://localhost:8888';
-axios.defaults.baseURL = 'https://fund-we-1.zhouyc.cc:8089';
+// axios.defaults.baseURL = 'http://192.168.43.241:8080';
+axios.defaults.baseURL = 'http://localhost:8080';
+// axios.defaults.baseURL = 'https://fund-we-1.zhouyc.cc:8089';
 import './assets/css/global.css';
 
 import './assets/fonts/iconfont.css';
