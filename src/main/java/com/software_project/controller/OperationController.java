@@ -155,7 +155,7 @@ public class OperationController {
                 continue;
             }
             String code = fund.getCode();
-            String s = restTemplate.getForObject("https://api.doctorxiong.club/v1/fund/detail?token=atTPd9c8sA&code=" + code + "&startDate=2021-04-01", String.class);
+            String s = restTemplate.getForObject("https://api.doctorxiong.club/v1/fund/detail?code=" + code + "&startDate=2021-04-01", String.class);
             JSONObject jsonObject = JSON.parseObject(s);
             JSONObject data =(JSONObject) jsonObject.get("data");
             if (!record.isType()){
@@ -251,7 +251,7 @@ public class OperationController {
             double totalHold = 0;               // 总持有金额
             for (Fund fund : ret.funds) {
                 String code = fund.getCode();
-                String s = restTemplate.getForObject("https://api.doctorxiong.club/v1/fund/detail?token=atTPd9c8sA&code=" + code + "&startDate=2021-04-01", String.class);
+                String s = restTemplate.getForObject("https://api.doctorxiong.club/v1/fund/detail?code=" + code + "&startDate=2021-04-01", String.class);
                 JSONObject jsonObject = JSON.parseObject(s);
                 JSONObject data =(JSONObject) jsonObject.get("data");
 

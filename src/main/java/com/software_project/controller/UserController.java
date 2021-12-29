@@ -253,7 +253,7 @@ public class UserController {
             for (Fund fund : ret.funds) {
                 // 获取基金详细信息的对象
                 String code = fund.getCode();
-                String s = restTemplate.getForObject("https://api.doctorxiong.club/v1/fund/detail?token=atTPd9c8sA&code=" + code + "&startDate=2021-04-01", String.class);
+                String s = restTemplate.getForObject("https://api.doctorxiong.club/v1/fund/detail?code=" + code + "&startDate=2021-04-01", String.class);
                 JSONObject jsonObject = JSON.parseObject(s);
                 JSONObject data =(JSONObject) jsonObject.get("data");
 
