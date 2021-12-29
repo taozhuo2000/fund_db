@@ -49,7 +49,7 @@ Page({
     var that = this;
     getFundDetail({
         code: this.data.fundCode,
-        token: "atTPd9c8sA"
+        // token: "atTPd9c8sA"
       },
       res => {
         this.setData({
